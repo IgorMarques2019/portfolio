@@ -1,0 +1,67 @@
+header .container img {
+  width:48px;
+  height:48px;
+}
+
+
+header {
+  background-color: rgb(238, 238, 238);
+}
+
+header .container {
+  padding: 36px 30px;
+  display: flex;
+  place-items: center;
+  place-content: center space-between;
+  gap:40px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  place-items: center;
+}
+
+header ul li {
+  flex-grow: 1;
+
+}
+
+header ul li a {
+  color: var(--paragraph);
+  font-size: 1.12rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 11px 20px;
+  
+  text-align: center;
+
+}
+
+header ul li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  display: block;
+  background-color: var(--title);
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0px;
+}
+
+header ul li a:hover::after {
+  width: 100%;
+}
+
+header ul li:last-child a::after {
+  display: none;
+}
+
+
+header ul li a.btn:hover {
+  background-color: #f2f2f2;
+  color: var(--title);
+  font-weight: bold;
+}
