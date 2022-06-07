@@ -33,8 +33,41 @@
       padding: 26px;
     }
 
-    section#sobre article h2 {
+
+    section#sobre article.about h2::before {
+      content: "";
+      width: 20px;
+      height: 10px;
+      background-color: tomato;
+      display: inline-block;
+      order: 0;
+    }
+
+    section#sobre article.experience h2::before {
+      content: "";
+      width: 20px;
+      height: 10px;
+      background-color: tomato;
+      display: inline-block;
+      order: 2;
+    }
+
+    section#sobre article {
       color: var(--title);
+    }
+
+    section#sobre article h2 {
+      display: flex;
+      place-items: center end;
+      gap: 10px;
+    }
+
+    section#sobre article.experience h2 {
+      display: flex;
+      place-items: center end;
+      place-content: end;
+      gap: 10px;
+
     }
 
     section#sobre .experience h2 {
@@ -64,8 +97,9 @@
         gap: 20px;
 
       }
+
       section#sobre article {
-        padding:5px 26px;
+        padding: 5px 26px;
       }
     }
 
@@ -73,6 +107,11 @@
     @media screen and (max-width:420px) {
       section#sobre article h2 {
         font-size: calc(2rem - 10px);
+      }
+
+      section#sobre article.experience h2::before {
+      
+        order: 0;
       }
 
     }
@@ -88,16 +127,23 @@
 
     @media screen and (max-width:390px) {
       section#sobre article {
-        padding:5px 26px;
+        padding: 5px 26px;
       }
+
       section#sobre .container {
-        gap:0px;
+        gap: 0px;
 
       }
-      section#sobre article.experience p {
-        text-align:initial;
-      }
+
       section#sobre article.experience h2 {
-        text-align:initial;
+        place-content:start;
+      }
+
+      section#sobre article.experience p {
+        text-align: initial;
+      }
+
+      section#sobre article.experience h2 {
+        text-align: initial;
       }
     }

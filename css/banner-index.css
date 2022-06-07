@@ -1,15 +1,17 @@
 .banner-bg {
   height: 100vh;
-  background: url('../imgs/jorge-ramirez-c14zh_DQnUw-unsplash.jpg')no-repeat fixed bottom;
+  background: url('../imgs/pexels-jack-krzysik-7753054.jpg')no-repeat fixed;
+  background-position:top;
   background-size: cover;
-
 }
 
 .banner-bg-white {
-  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.999) 97%);
+
+  background: linear-gradient(to bottom, transparent 1%, rgb(255, 255, 255) 95%); 
   width: 100%;
   height: 100%;
   padding: 20px;
+  
 }
 
 .banner-bg-white .container {
@@ -20,6 +22,14 @@
   place-content: center;
   padding-left: 67.96px;
 }
+
+
+.banner-bg-white  .name-banner, .banner-bg-white  .title-banner {
+  text-shadow:0px 0px 10px rgba(0, 0, 0, 0.284);
+  
+}
+
+
 
 @media screen and (max-width:800px) {
   .banner-bg-white .container {

@@ -2,8 +2,10 @@ const iconMenu = document.querySelector('.menu-toggle')
 
 // Quando tiver na largura mobile ativa o icone
 if (window.matchMedia('(max-width:800px').matches) {
+  
   iconMenu.setAttribute('data-menuToggle', "ativo")
 } else {
+  document.querySelector('header').style.display = 'none';
   iconMenu.setAttribute('data-menuToggle', "inativo")
 }
 
