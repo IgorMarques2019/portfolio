@@ -7,8 +7,15 @@ if (window.matchMedia('(max-width:800px').matches) {
   iconMenu.setAttribute('data-menuToggle', "inativo")
 }
 
-
+const linksMenu = document.querySelectorAll('header a');
 let clickCount = 0;
+linksMenu.forEach((item) => {
+  item.addEventListener('click', function () {
+    toggleMenu()
+  })
+
+})
+
 
 function toggleMenu() {
   clickCount++;
