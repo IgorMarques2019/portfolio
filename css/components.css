@@ -1,8 +1,68 @@
 .btn {
   padding: 10px 20px;
-  background-color: var(--title);
+  background-color: #060713;
   color: white;
   display:block;
   border-radius: 4px;
+}
+
+.btn:hover {
+  background-color:#0c0e26;
+  color:white;
+}
+
+
+
+
+.breadcumps {
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  place-content:center;
+  top:0px;
+  gap:50px;
+  z-index:1;
+  height:100vh;
+  padding:20px;
+}
+
+.breadcumps a {
+  color:white;
+  background-color:#060713;
+  width:max-content;
+  height:max-content;
+  font-size:1.12rem;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  display:block;
+  font-family:poppins;
+  display:flex;
+  place-content:center;
+}
+
+.breadcumps a::after {
+  content:"";
+  display:block;
+  width:2px;
+  height:70px;
+  background-color:#060713;
+  z-index:-1;
+}
+
+.breadcumps a:last-child::after {
+display:none;
+}
+
+.breadcumps a:hover{
+  background-color:#ffffff;
+  transition:0.4s;
+}
+
+
+
+@media screen and (max-width:800px) {
+  .breadcumps {
+  display:none;
 }
 

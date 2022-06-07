@@ -1,6 +1,7 @@
 * {
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -18,4 +19,19 @@ a {
 
 img {
   display:block;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#ffffff;
+  
+  
+}
+
+body::-webkit-scrollbar {
+  width:0px;
+  background-color: #060713; 
+}
+
+html {
+  scroll-behavior:smooth;
 }

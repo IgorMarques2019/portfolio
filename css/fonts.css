@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Vidaloka&display=swap');
 
 .logo-header {
-  font-family: 'Vidaloka';
+  font-family: 'Poppins';
   font-size: 1.62rem;
-  color:var(--title);
-  text-transform:uppercase;
+  color: var(--title);
+  text-transform: uppercase;
 }
 
 .font-p {
@@ -17,12 +17,37 @@
 
 .title-banner {
   font-size: 5.87rem;
+  color: #060713;
+
 }
 
 .name-banner {
+  color: #060713;
+  font-family: poppins;
   font-size: 2rem;
 }
 
 .name-banner span {
   color: white;
+}
+
+.title-banner span {
+  color: white;
+}
+
+.title {
+  font-family:'VidaLoka';
+  font-size: 3.37rem;
+  line-height:5rem;
+}
+
+
+.subtitle {
+  font-size: 1.25rem;
+}
+
+.p {
+  font-family:poppins;
+  font-size: 1rem;
+line-height:25px;
 }

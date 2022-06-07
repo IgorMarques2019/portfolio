@@ -6,18 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+  <link rel="shortcut icon" href="./imgs/cup.png" type="image/x-icon">
+  <title>Igor Marques - Portfolio</title>
 </head>
 
 <body>
-  <header  data-menu="inativo">
+  <header data-menu="inativo">
     <div class="container">
       <h2 class="logo-header">&lt;/dev&gt;</h2>
       <img class="menu-toggle" onclick="toggleMenu()" data-menuToggle="inativo" src="./imgs/icons/menu-hidden.png" alt="">
       <nav data-nav="ativo" aria-label="primária">
         <ul class="font-s">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#">Serviços</a></li>
           <li><a href="#">Orçamento</a></li>
           <li><a href="#" class="btn">contato</a></li>
@@ -26,6 +27,37 @@
     </div>
   </header>
 
+  <section id="banner-bg" class="banner-bg" aria-label="Apresentação">
+    <div class="banner-bg-white">
+      <div class="container">
+        <h3 class="name-banner">Olá, Eu sou <span>Igor</span></h3>
+        <h2 class="title-banner">Desenvolvedor <span>Front End</span></h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="breadcumps">
+    <a href="#banner-bg"></a>
+    <a href="#sobre"></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+  </div>
+
+  <section aria-label="Sobre Mim" id="sobre">
+    <div class="container">
+
+      <article aria-label="sobre" class="about">
+        <h2 class="title">Sobre Mim</h2>
+        <p class="p">Me chamo Igor, tenho 22 anos, por volta dos meus 14 anos, enquanto navegava na internet, me questionei sobre como as coisas funcionavam, porque o site é assim como funciona, percebi que era apenas tudo caixa, então também soube o que eu deveria ser.</p>
+      </article>
+
+      <article aria-label="Experiências" class="experience">
+        <h2 class="title">Experiencias</h2>
+        <p class="p">Trabalho como freelancer a 2 anos, ainda estou no processo de aprendizado</p>
+      </article>
+    </div>
+  </section>
 
 
 

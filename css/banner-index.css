@@ -1,0 +1,60 @@
+.banner-bg {
+  height: 100vh;
+  background: url('../imgs/jorge-ramirez-c14zh_DQnUw-unsplash.jpg')no-repeat fixed bottom;
+  background-size: cover;
+
+}
+
+.banner-bg-white {
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.999) 97%);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.banner-bg-white .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  padding-left: 67.96px;
+}
+
+@media screen and (max-width:800px) {
+  .banner-bg-white .container {
+    
+    padding-left:0;
+  }
+}
+
+@media screen and (max-width:670px) {
+  .name-banner {
+    font-size: calc(2rem - 10px);
+  }
+
+  .title-banner {
+    font-size: calc(3.37rem - 10px);
+  }
+}
+
+@media screen and (max-width:670px) {
+  .name-banner {
+    font-size: calc(2rem - 10px);
+  }
+
+  .title-banner {
+    font-size: calc(3.37rem - 10px);
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  .banner-bg-white .container {
+    text-align: center;
+  }
+
+  .title-banner {
+    line-height: 1.5;
+  }
+}
